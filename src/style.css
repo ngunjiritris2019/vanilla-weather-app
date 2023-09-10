@@ -23,7 +23,7 @@ footer {
   border: 1px solid #72bac6;
   max-width: 600px;
   max-height: 475px;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/508/original/3d-white-clouds-blue-background.jpg?1694359875");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/518/original/3d-white-clouds-blue-background_%282%29.jpg?1694366599");
 }
 .current-weather {
   display: block;
@@ -48,7 +48,11 @@ footer {
   position: relative;
   left: 80px;
 }
-
+.units a {
+  text-decoration: none;
+  cursor: default;
+  color: #212529;
+}
 #current-temp {
   font-size: 50px;
 }
