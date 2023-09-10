@@ -10,7 +10,7 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
@@ -22,25 +22,65 @@
             placeholder="Type a city..."
             autocomplete="off"
             autofocus="on"
-          />
-          <input type="submit" value="Search" />
+          /><input type="submit" value="Search" class="btn btn-info" />
         </form>
         <h1>Nairobi</h1>
-        <div class="current-Weather">
-          <div class="row">
-            <div class="col-6 w-25">
+        <div class="current-weather mb-30">
+          <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="sunny" />
+          <h2>
+            <span id="current-temp">24</span
+            ><a href="#" id="celsius-link">°C</a>|<a
+              href="#"
+              id="fahrenheit-link"
+              >°F</a
+            >
+            <p class="description">Clear sky</p>
+          </h2>
+          <div class="temp-variation">
+            <div class="max">
+              <h2>H:<span id="max-temperature">29</span>°C</h2>
+            </div>
+            <div class="min">
+              <h2>L:<span id="min-temperature">13</span>°C</h2>
+            </div>
+          </div>
+          <div class="weather-variations">
+            <div class="wind-icon">
               <img
-                src="https://openweathermap.org/img/wn/01d@2x.png"
-                alt="sunny"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/449/original/wind_2153129.png?1694335882"
+                alt="wind"
+                width="30"
               />
             </div>
-            <div class="col-6 m-20">
-              <h2 id="current-Temp">24</h2>
-              <span>°C</span>|<span>°F</span>
+            <div class="humidity-icon">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/450/original/drops_10711249.png?1694336318"
+                alt="humid"
+                width="30"
+              />
+            </div>
+            <div class="temp-icon">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/451/original/thermometer_6420979.png?1694336552"
+                alt="temp"
+                width="30"
+              />
+            </div>
+            <div class="wind-speed">
+              <p>Wind: <span>3</span>km/h</p>
+            </div>
+            <div class="humidity">
+              <p>Humidity: <span>30</span>%</p>
+            </div>
+            <div class="temp-like">
+              <p>Feels like: <span>22</span>°C</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <footer>
+      <p><a href="">Open-sourcecode</a> by Beatrice Ngunjiri</p>
+    </footer>
   </body>
 </html>
