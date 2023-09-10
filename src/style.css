@@ -61,3 +61,6 @@ footer {
   margin-right: 10px;
   height: 45px;
 }
+#description:first-letter {
+  text-transform: capitalize;
+}
