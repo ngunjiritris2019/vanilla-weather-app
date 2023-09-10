@@ -21,7 +21,6 @@ function currentTime(timestamp) {
   return `${day} ${hours}: ${minutes}`;
 }
 function displayWeather(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#current-temp");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
 
