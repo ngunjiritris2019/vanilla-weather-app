@@ -22,6 +22,8 @@ footer {
   padding: 20px 30px;
   border: 1px solid #72bac6;
   max-width: 600px;
+  max-height: 475px;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/508/original/3d-white-clouds-blue-background.jpg?1694359875");
 }
 .current-weather {
   display: block;

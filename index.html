@@ -21,21 +21,25 @@
             type="search"
             id="input-city"
             placeholder="Type a city..."
-            autocomplete="off"
             autofocus="on"
           /><input type="submit" value="Search" class="btn btn-info" />
         </form>
-        <h1>Nairobi</h1>
+        <h1 id="city"></h1>
+        <p id="current-time">Monday<span> 15:34</span></p>
         <div class="current-weather mb-30">
-          <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="sunny" />
+          <img
+            id="icon"
+            src="https://openweathermap.org/img/wn/01d@2x.png"
+            alt="sunny"
+          />
           <h2>
-            <span id="current-temp">24</span
+            <span id="current-temp"> 24</span
             ><a href="#" id="celsius-link">°C</a>|<a
               href="#"
               id="fahrenheit-link"
               >°F</a
             >
-            <p class="description">Clear sky</p>
+            <p id="description">Clear sky</p>
           </h2>
           <div class="temp-variation">
             <div class="max">
@@ -68,13 +72,13 @@
               />
             </div>
             <div class="wind-speed">
-              <p>Wind: <span>3</span>km/h</p>
+              <p>Wind: <span id="wind">3</span>km/h</p>
             </div>
             <div class="humidity">
-              <p>Humidity: <span>30</span>%</p>
+              <p>Humidity: <span id="humidity">30</span>%</p>
             </div>
             <div class="temp-like">
-              <p>Feels like: <span>22</span>°C</p>
+              <p>Feels like: <span id="feels-like">22</span>°C</p>
             </div>
           </div>
         </div>
