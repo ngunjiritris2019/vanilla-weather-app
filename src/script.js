@@ -38,7 +38,7 @@ function displayForecast(response) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
-        `<div class="col-2">
+        `<div class="col-2 forecast-day">
         <div class="weekly-forecast-date"> ${formatDay(
           dailyForecastDay.dt
         )}</div>
@@ -125,7 +125,7 @@ function displayFahrenheitTemp(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#current-temp");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  temperatureElement.innerHTML = `${Math.round(fahrenheitTemperature)}°F`;
 }
 
 let celsiusTemperature = null;
@@ -133,7 +133,7 @@ let celsiusTemperature = null;
 function displayCelsiusTemp(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#current-temp");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  temperatureElement.innerHTML = `${Math.round(celsiusTemperature)}°C`;
 }
 
 let celsiusLink = document.querySelector("#celsius-link");

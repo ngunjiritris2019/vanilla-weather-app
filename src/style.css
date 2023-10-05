@@ -21,8 +21,9 @@ footer {
   margin: 40px auto;
   padding: 20px 30px;
   border: 1px solid #72bac6;
-  max-width: 600px;
-  max-height: 610px;
+  border-radius: 14px;
+  max-width: 670px;
+  max-height: 670px;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/518/original/3d-white-clouds-blue-background_%282%29.jpg?1694366599");
 }
 .current-weather {
@@ -48,6 +49,9 @@ footer {
   position: relative;
   left: 80px;
 }
+.units {
+  font-size: 16px;
+}
 .units a {
   text-decoration: none;
   cursor: default;
@@ -57,8 +61,17 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-bottom: 40px;
   color: #000000;
+}
+.forecast-day {
+  border: 2px inset #17474f;
+  border-radius: 5px;
+  padding-left: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+.forecast-day:hover {
+  transform: scale(1.2);
 }
 .weekly-forecast img {
   display: block;
