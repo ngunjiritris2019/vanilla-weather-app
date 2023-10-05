@@ -22,7 +22,7 @@ footer {
   padding: 20px 30px;
   border: 1px solid #72bac6;
   max-width: 600px;
-  max-height: 475px;
+  max-height: 610px;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/518/original/3d-white-clouds-blue-background_%282%29.jpg?1694366599");
 }
 .current-weather {
@@ -52,6 +52,28 @@ footer {
   text-decoration: none;
   cursor: default;
   color: #212529;
+}
+.weekly-forecast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #000000;
+}
+.weekly-forecast img {
+  display: block;
+  margin: 0 auto;
+  padding-right: 20px;
+}
+.weekly-forecast-date {
+  font-size: 24px;
+}
+.maximum-temp {
+  font-size: 20px;
+}
+.minimum-temp {
+  opacity: 0.5;
+  font-size: 20px;
 }
 #current-temp {
   font-size: 50px;
