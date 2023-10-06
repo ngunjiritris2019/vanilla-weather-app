@@ -20,7 +20,7 @@ footer {
   text-align: center;
   margin: 40px auto;
   padding: 20px 30px;
-  border: 1px solid #72bac6;
+  border: 5px outset #72bac6;
   border-radius: 14px;
   max-width: 670px;
   max-height: 670px;
